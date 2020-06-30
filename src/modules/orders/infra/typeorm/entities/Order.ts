@@ -16,11 +16,11 @@ class Order {
   @PrimaryGeneratedColumn()
   id: string;
 
-  @ManyToOne(type => Customer)
+  @ManyToOne(_ => Customer)
   @JoinColumn({ name: 'customer_id' })
   customer: Customer;
 
-  @OneToMany(type => OrdersProducts, order_products => order_products.order)
+  @OneToMany(_ => OrdersProducts, order_products => order_products.order)
   order_products: OrdersProducts[];
 
   @CreateDateColumn()
