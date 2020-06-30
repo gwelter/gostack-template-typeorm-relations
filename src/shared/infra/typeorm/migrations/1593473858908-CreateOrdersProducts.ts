@@ -22,6 +22,18 @@ export default class CreateOrdersProducts1593473858908 implements MigrationInter
             type: 'uuid',
           },
           {
+            name: 'price',
+            type: 'decimal',
+            precision: 5,
+            scale: 2,
+            default: 0,
+          },
+          {
+            name: 'quantity',
+            type: 'numeric',
+            default: 0,
+          },
+          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',
