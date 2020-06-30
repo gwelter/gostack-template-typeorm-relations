@@ -30,8 +30,7 @@ export default class CreateOrdersProducts1593473858908 implements MigrationInter
           },
           {
             name: 'quantity',
-            type: 'numeric',
-            default: 0,
+            type: 'integer',
           },
           {
             name: 'created_at',
